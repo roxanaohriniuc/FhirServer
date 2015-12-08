@@ -20,4 +20,4 @@ var observationSchema    = new Schema({
     unit : String
 });
 
-module.exports = mongoose.model('Observations', observationSchemaSchema); 
+module.exports = mongoose.model('Observations', observationSchema); 
