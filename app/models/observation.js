@@ -10,6 +10,9 @@ var observationSchema    = new Schema({
                 message: "ID required."
             }
            },
+    date : {type : Date,
+            default : Date.now
+    },
     practitionerId : String,
     type : {
         type : String,
