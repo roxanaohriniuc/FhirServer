@@ -145,12 +145,12 @@ router.route('/observations')
                 res.json({message : 'Observation created.'})
             });
           })
-    .get(function(req, res){(
-        function(err, observations) {
-            if(err)
-                res.send(err);
-            res.json(observations);
-        });
+     .get(function(req, res) {
+            Observation.find(function(err, people) {
+                if(err)
+                    res.send(err);
+                res.json(people);
+            });
     });
 
 router.route('/observations/:observation_id')
